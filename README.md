@@ -29,6 +29,9 @@
   ```shell
   $ npm run start
   ```
+  
+6. Open browser on localhost:8091 (client and server will run on one port)
+
 
 ## Features
 
