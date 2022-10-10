@@ -9,7 +9,8 @@ const middleware = [thunk]
 const enhancers = []
 const initialState = {}
 
-const composeFunc = process.env.NODE_ENV === 'development' ? composeWithDevTools : compose
+// const composeFunc = process.env.NODE_ENV === 'development' ? composeWithDevTools : compose
+const composeFunc = composeWithDevTools
 const composedEnchanters = composeFunc(applyMiddleware(...middleware), ...enhancers)
 
 const store  = createStore(createRootReducer(), initialState, composedEnchanters)
